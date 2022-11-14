@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+.container {
+  height: 600px;
+  width: 800px;
+  padding: 32px;
+  border-radius: 11px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.title {
+  font-size: 56px;
+  color: black;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 6px;
+}
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image {
+  border-radius: 50%;
+  height: 140px;
+  width: 140px;
+}
+.name {
+  text-align: center;
+  font-variant: 22px;
+  padding: 18px 0 4px 0;
+}
+.verified {
+  text-align: center;
+  color: rgb(54, 110, 189);
+  font-size: 18px;
+  padding: 12px 0;
+}
+.rewiev {
+  font-size: 24px;
+  line-height: 1.6;
+  color: rgb(98, 96, 96);
+}
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 0;
+  gap: 42px;
+}
+.icon {
+  height: 44px;
+}
