@@ -24,27 +24,32 @@ body {
   font-weight: 400;
   text-align: center;
   padding-bottom: 6px;
+  user-select: none;
 }
 .img-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  user-select: none;
 }
 .image {
   border-radius: 50%;
   height: 140px;
   width: 140px;
+  user-select: none;
 }
 .name {
   text-align: center;
   font-variant: 22px;
   padding: 18px 0 4px 0;
+  user-select: none;
 }
 .verified {
   text-align: center;
   color: rgb(54, 110, 189);
   font-size: 18px;
   padding: 12px 0;
+  user-select: none;
 }
 .rewiev {
   font-size: 24px;
@@ -62,4 +67,7 @@ body {
 }
 .icon {
   height: 44px;
+}
+#comment {
+  user-select: none;
 }

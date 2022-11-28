@@ -38,13 +38,10 @@ const reviews = [
   },
 ];
 
-const card = document.querySelector("#slider");
 const img = document.querySelector("#imgSource");
 const personName = document.querySelector("#name");
 const verified = document.querySelector("#verified");
 const text = document.querySelector("#comment");
-const prevBtn = document.querySelector(".left-icon");
-const nextBtn = document.querySelector(".right-icon");
 
 let currentItem = 0;
 
@@ -63,18 +60,22 @@ function showPerson(person) {
   verified.textContent = item.verified;
   text.textContent = item.comment;
 }
-nextBtn.addEventListener("click", function () {
-  currentItem++;
-  if (currentItem > reviews.length - 1) {
-    currentItem = 0;
-  }
-  showPerson(currentItem);
-});
+const nextBtn = document
+  .querySelector(".right-icon")
+  .addEventListener("click", function () {
+    currentItem++;
+    if (currentItem > reviews.length - 1) {
+      currentItem = 0;
+    }
+    showPerson(currentItem);
+  });
 
-prevBtn.addEventListener("click", function () {
-  currentItem--;
-  if (currentItem < 0) {
-    currentItem = reviews.length - 1;
-  }
-  showPerson(currentItem);
-});
+const prevBtn = document
+  .querySelector(".left-icon")
+  .addEventListener("click", function () {
+    currentItem--;
+    if (currentItem < 0) {
+      currentItem = reviews.length - 1;
+    }
+    showPerson(currentItem);
+  });
